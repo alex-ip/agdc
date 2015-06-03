@@ -33,9 +33,6 @@ version = '1.1.1'
 
 setup(name='agdc',
       version = version,
-      package_dir = {
-                     'agdc' : 'src'
-                     },
       packages = [
                   'agdc',
                   'agdc.abstract_ingester',
@@ -51,11 +48,12 @@ setup(name='agdc',
                  'bin/bulk_submit_pbs.sh'
                  ],
       requires = [
-                  'EOtools',
+                  'eotools',
                   'psycopg2',
                   'gdal',
                   'numexpr',
                   'scipy',
+                  'dateutil',
                   'pytz'
                   ],
       url = 'https://github.com/GeoscienceAustralia/ga-datacube',
